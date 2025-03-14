@@ -6,5 +6,8 @@ buttonEl.addEventListener("click", addGoalToList);
 
 function addGoalToList(){
 	const inputValue = inputEl.value;
-	const goalListItem = inputValue.createElement();
+	const listItemEl = document.createElement("li");
+	listItemEl.textContent = inputValue;
+	listEl.appendChild(listItemEl);
+	console.log("functie aangeroepen");
 }
