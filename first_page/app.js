@@ -4,9 +4,10 @@ const listEl = document.querySelector("ul");
 
 buttonEl.addEventListener("click", addGoalToList);
 
-function addGoalToList(){
+function addGoalToList() {
 	const inputValue = inputEl.value;
 	const listItemEl = document.createElement("li");
 	listItemEl.textContent = inputValue;
 	listEl.appendChild(listItemEl);
+	inputEl.value = "";
 }
