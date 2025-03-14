@@ -9,5 +9,4 @@ function addGoalToList(){
 	const listItemEl = document.createElement("li");
 	listItemEl.textContent = inputValue;
 	listEl.appendChild(listItemEl);
-	console.log("functie aangeroepen");
 }
