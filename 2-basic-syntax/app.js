@@ -4,6 +4,7 @@ const app = Vue.createApp({
 			courseGoalA: "doeltje A :)",
 			courseGoalB: "doeltje B ;D",
       vueLink: "https://google.com",
+			htmlGoal: "<h1>My course goals</h1>",
     };
   },
   methods: {
@@ -19,4 +20,3 @@ const app = Vue.createApp({
 });
 app.mount("#user-goal");
 
-//console.log(outputgoal());

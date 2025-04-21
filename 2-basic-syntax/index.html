@@ -16,7 +16,7 @@
 		<h1>Vue Course Goals</h1>
 	</header>
 	<section id="user-goal">
-		<h2>My Course Goal</h2>
+		<p v-html="htmlGoal"></p>
 		<p>{{outputGoal()}}</p>
 		<a v-bind:href="vueLink">ga naar google!</a>
 	</section>
