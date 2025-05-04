@@ -1,15 +1,21 @@
 Vue.createApp({
 	data() {
 		return {
-			text: "",
+			text1: "",
+			text2: "",
 		};
 	},
 	methods: {
 		show_alert() {
 			alert("Wat goed dat je geklikt hebt");
 		},
-		register_text(event) {
-			this.text = event.target.value;
+		register_text(event, enter) {
+			if (enter == 0) {
+				this.text1 = event.target.value;
+			}
+			if (enter == 1) {
+				this.text2 = event.target.value;
+			}
 		},
 	},
 }).mount("#assignment");
