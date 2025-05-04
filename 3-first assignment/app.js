@@ -3,9 +3,18 @@ Vue.createApp({
 		return {
 			name: "Ruubje",
 			age: 30,
+			image_url: "https://cdn.webshopapp.com/shops/313565/files/416212946/de-eekhoorn-in-the-picture.jpg",
 		};
 	},
 	methods: {
+		random_num(){
+      const randomNumber = Math.random();
+      if (randomNumber > 0.5) {
+        return 0;
+      } else {
+        return 1;
+      }
+    },
 		return_age() {
 			if (this.age < 30) {
 				return `<h3 style="color: pink">${this.age}</h3>`;
