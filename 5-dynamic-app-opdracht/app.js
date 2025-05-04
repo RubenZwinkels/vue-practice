@@ -4,5 +4,8 @@ Vue.createApp({
 		};
 	},
 	methods: {
+		show_alert(){
+			alert("Wat goed dat je geklikt hebt");
+		}
 	}
 }).mount("#assignment");
